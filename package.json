@@ -1,0 +1,20 @@
+{
+  "name": "gas-es6-template",
+  "description": "Google Apps Script ES6 env",
+  "scripts": {
+    "output": "browserify -t babelify -p gasify src/xxx.js -o dist/xxx.js",
+    "setup": "npm i -g @google/clasp && npm run login",
+    "login": "clasp login",
+    "create": "clasp create",
+    "clone": "clasp clone",
+    "pull": "clasp pull",
+    "push": "clasp push"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "gasify": "^0.1.2"
+  }
+}
