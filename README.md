@@ -1,20 +1,26 @@
 # GAS ES6 Template
 Google Apps Script ES6+ development environment.  
-"clasp" use. clasp is Google made GAS local dev CLI.
+"[clasp](https://github.com/google/clasp)" use. clasp is Google made GAS local dev CLI.
 
 ## Usage
-1. [Download](https://github.com/windChimeYK/gas-es6-template/archive/master.zip) and unzip
+1. Install [github-download-parts](https://github.com/pspgbhu/github-download-parts) and this repo download.
+```
+npm i -g github-download-parts
+repo -r "windchime-yk/gas-es6-env" -t local_folder
+```
 2. Package install  
 ```
 npm i
 ```
-3. Setup  
+3. Setup clasp  
 `npm run setup` used "clasp" global install and your google acount authorize.  
 if you want "clasp" local install, `npm i -D @google/clasp` and `npm run login` used.
 4. Create or Clone  
 `npm run create -- projectName` is new GAS project create.  
 if GAS project already create, `npm run clone -- projectID` used. `npm run pull` use this GAS project code download.
-5. Coding
+5. Coding  
+`npm run dev`: code watch after that compile.
+`npm run build`: only compile.
 6. Push  
 `npm run push` your GAS project.
 
