@@ -1,6 +1,6 @@
 {
-  "name": "gas-es6-template",
-  "description": "Google Apps Script ES6 env",
+  "name": "gas-ts-env",
+  "description": "Environment to develop Google Apps Script with TypeScript",
   "scripts": {
     "login": "clasp login",
     "make": "clasp create",
