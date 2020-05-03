@@ -1,28 +1,38 @@
-# GAS ES6 Template
-Google Apps Script ES6+ development environment.  
-"[clasp](https://github.com/google/clasp)" use. clasp is Google made GAS local dev CLI.
+# GAS TS Env
+This is the environment created for developing Google Apps Script (GAS) with TypeScript.  
+You can use Google's "[clasp](https://github.com/google/clasp)" to develop it locally.  
+Because it's created locally, it can also be versioned in Git.
 
 ## Usage
-1. Install [github-download-parts](https://github.com/pspgbhu/github-download-parts) and this repo download.
+1. Duplicate the repository by pressing `Use this template` and download it locally.
+
+2. Install the package  
+``` bash
+$ yarn
 ```
-npm i -g github-download-parts
-repo -r "windchime-yk/gas-es6-env" -t local_folder
+
+3. Authenticate clasp with your Google account  
+``` bash
+$ yarn login
 ```
-2. Package install  
+
+4. Create or connect the project  
+``` bash
+# If there is no project locally
+$ yarn make <project-name> # Create a new project
+# or
+$ yarn clone <project-id> # Connect to an existing project
+
+# If you are already connected to the project
+$ yarn pull # Get code from a connected project
 ```
-npm i
+
+5. Write whatever you want!
+
+6. Upload to the project  
+``` bash
+$ yarn push
 ```
-3. Setup clasp  
-`npm run setup` used "clasp" global install and your google acount authorize.  
-if you want "clasp" local install, `npm i -D @google/clasp` and `npm run login` used.
-4. Create or Clone  
-`npm run create -- projectName` is new GAS project create.  
-if GAS project already create, `npm run clone -- projectID` used. `npm run pull` use this GAS project code download.
-5. Coding  
-`npm run dev`: code watch after that compile.
-`npm run build`: only compile.
-6. Push  
-`npm run push` your GAS project.
 
 ## Reference
 * [GAS のGoogle謹製CLIツール clasp](https://qiita.com/HeRo/items/4e65dcc82783b2766c03)
