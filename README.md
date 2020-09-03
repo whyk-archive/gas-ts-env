@@ -10,28 +10,28 @@ Googleの"[clasp](https://github.com/google/clasp)"を使い、ローカルで�
 
 2. パッケージをインストールします  
 ``` bash
-$ yarn
+$ npm i
 ```
 
 3. claspをGoogleアカウントで認証します  
 ``` bash
-$ yarn login
+$ npm run login
 ```
 
 4. プロジェクトを作成ないし複製します  
 ``` bash
 # ローカルにプロジェクトがない場合
-$ yarn make <project-name> # 新しいプロジェクトの作成
+$ npm run make -- <project-name> # 新しいプロジェクトの作成
 # or
-$ yarn clone <project-id> # 既存のプロジェクトと接続
+$ npm run clone -- <project-id> # 既存のプロジェクトと接続
 
 # 既にプロジェクトと接続済みの場合
-$ yarn pull # 接続済みのプロジェクトからコードを取得
+$ npm run pull # 接続済みのプロジェクトからコードを取得
 ```
 
 5. 好きに書いてください
 
 6. プロジェクトにアップロードします  
 ``` bash
-$ yarn push
+$ npm run push
 ```

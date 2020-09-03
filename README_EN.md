@@ -10,28 +10,28 @@ Because it's created locally, it can also be versioned in Git.
 
 2. Install the package  
 ``` bash
-$ yarn
+$ npm i
 ```
 
 3. Authenticate clasp with your Google account  
 ``` bash
-$ yarn login
+$ npm run login
 ```
 
 4. Create or connect the project  
 ``` bash
 # If there is no project locally
-$ yarn make <project-name> # Create a new project
+$ npm run make -- <project-name> # Create a new project
 # or
-$ yarn clone <project-id> # Connect to an existing project
+$ npm run clone -- <project-id> # Connect to an existing project
 
 # If you are already connected to the project
-$ yarn pull # Get code from a connected project
+$ npm run pull # Get code from a connected project
 ```
 
 5. Write whatever you want!
 
 6. Upload to the project  
 ``` bash
-$ yarn push
+$ npm run push
 ```
