@@ -12,6 +12,6 @@
     "@google/clasp": "^2.3.0"
   },
   "dependencies": {
-    "@types/google-apps-script": "^1.0.13"
+    "@types/google-apps-script": "^1.0.15"
   }
 }
