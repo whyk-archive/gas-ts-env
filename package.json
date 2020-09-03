@@ -1,21 +1,16 @@
 {
-  "name": "gas-es6-template",
-  "description": "Google Apps Script ES6 env",
+  "private": true,
   "scripts": {
-    "setup:global": "npm i -g @google/clasp && npm run login",
-    "setup:local": "npm i -D @google/clasp && npm run login",
     "login": "clasp login",
-    "create": "clasp create",
+    "make": "clasp create --rootDir ./app --title",
     "clone": "clasp clone",
     "pull": "clasp pull",
-    "dev": "babel src/ -d dist/ -w",
-    "build": "babel src/ -d dist/ --minified",
     "push": "clasp push"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "babel-preset-gas": "^2.0.4"
+    "@google/clasp": "^2.3.0"
+  },
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.15"
   }
 }
