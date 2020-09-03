@@ -3,7 +3,7 @@
   "description": "Environment to develop Google Apps Script with TypeScript",
   "scripts": {
     "login": "clasp login",
-    "make": "clasp create --rootDir ./app",
+    "make": "clasp create --rootDir ./app --title",
     "clone": "clasp clone",
     "pull": "clasp pull",
     "push": "clasp push"
