@@ -1,6 +1,5 @@
 {
-  "name": "gas-ts-env",
-  "description": "Environment to develop Google Apps Script with TypeScript",
+  "private": true,
   "scripts": {
     "login": "clasp login",
     "make": "clasp create --rootDir ./app --title",
