@@ -1,5 +1,5 @@
 # GAS TS Env
-【日本語 / English】
+【[日本語](./README.md) / English】
 
 This is the environment created for developing Google Apps Script (GAS) with TypeScript.  
 You can use Google's "[clasp](https://github.com/google/clasp)" to develop it locally.  
