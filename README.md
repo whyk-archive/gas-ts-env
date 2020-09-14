@@ -1,37 +1,37 @@
 # GAS TS Env
-【日本語 / [English](./README_EN.md)】
+【[日本語](./README_JP.md) / English】
 
-これはGoogle Apps Script（以下、GAS）をTypeScriptで開発するために作られた環境です。  
-Googleの"[clasp](https://github.com/google/clasp)"を使い、ローカルで開発できるようになっています。  
-ローカルで作成するため、Gitでバージョン管理することも可能です。
+This is the environment created for developing Google Apps Script (GAS) with TypeScript.  
+You can use Google's "[clasp](https://github.com/google/clasp)" to develop it locally.  
+Because it's created locally, it can also be versioned in Git.
 
-## 使い方
-1. `Use this template`を押下してレポジトリを複製し、ローカルにダウンロードしてください。
+## Usage
+1. Duplicate the repository by pressing `Use this template` and download it locally.
 
-2. パッケージをインストールします  
+2. Install the package  
 ``` bash
 $ yarn
 ```
 
-3. claspをGoogleアカウントで認証します  
+3. Authenticate clasp with your Google account  
 ``` bash
 $ yarn login
 ```
 
-4. プロジェクトを作成ないし複製します  
+4. Create or connect the project  
 ``` bash
-# ローカルにプロジェクトがない場合
-$ yarn make <project-name> # 新しいプロジェクトの作成
+# If there is no project locally
+$ yarn make <project-name> # Create a new project
 # or
-$ yarn clone <project-id> # 既存のプロジェクトと接続
+$ yarn clone <project-id> # Connect to an existing project
 
-# 既にプロジェクトと接続済みの場合
-$ yarn pull # 接続済みのプロジェクトからコードを取得
+# If you are already connected to the project
+$ yarn pull # Get code from a connected project
 ```
 
-5. 好きに書いてください
+5. Write whatever you want!
 
-6. プロジェクトにアップロードします  
+6. Upload to the project  
 ``` bash
 $ yarn push
 ```
